@@ -100,15 +100,15 @@ this.style.color = "inherit";
 
 
 function move(){
-  var pos = 0;
+  var pos = 47;
   var time = setInterval(movef, 5);
   function movef(){
-    if (pos <= 20) {
+    if (pos <= 55) {
       pos++;
-      document.querySelector("h1").style.left= pos + 'px';
+      document.querySelector("h1").style.left= pos + '%';
     } else {
       pos--;
-      document.querySelector("h1").style.left=pos + 'px';
+      document.querySelector("h1").style.left=pos + '%';
     };
   };
 };
