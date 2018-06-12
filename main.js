@@ -87,6 +87,8 @@ function fadeIn(inter, op) {
   }
 
   /* EXO 9 */
+
+
   document.querySelector("h1").onmouseenter = function(){
 	this.style.color = "red";
   this.style.width = "100px";
@@ -98,17 +100,15 @@ document.querySelector("h1").onmouseleave = function(){
 this.style.color = "inherit";
 };
 
-
 function move(){
   var pos = 47;
-  var time = setInterval(movef, 5);
+  var t = setInterval(movef(), 300);
   function movef(){
-    if (pos <= 55) {
-      pos++;
-      document.querySelector("h1").style.left= pos + '%';
+    if (pos >= 200) {
+      clearInterval(t);
     } else {
-      pos--;
-      document.querySelector("h1").style.left=pos + '%';
+      pos++;
+      document.querySelector("h1").style.marginLeft= pos + '%';
     };
   };
 };
