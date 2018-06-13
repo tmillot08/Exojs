@@ -92,7 +92,6 @@ function fadeIn(inter, op) {
   document.querySelector("h1").onmouseenter = function(){
 	this.style.color = "red";
   this.style.width = "100px";
-  this.style.marginLeft= "47%";
 };
 
 
@@ -101,14 +100,33 @@ this.style.color = "inherit";
 };
 
 function move(){
-  var pos = 47;
-  var t = setInterval(movef(), 300);
+  var pos = 0;
+  var t = setInterval(movef, 300);
   function movef(){
-    if (pos >= 200) {
-      clearInterval(t);
+    if (pos >= 47) {
+      pos -= 2;
+      document.querySelector("h1").style.marginLeft= pos + '%';
     } else {
-      pos++;
+      pos += 2;
       document.querySelector("h1").style.marginLeft= pos + '%';
     };
   };
 };
+
+/* Exo 10 */
+var para = document.createElement("p");
+var paraBis = document.createElement("p");
+var Cont = document.createTextNode("Lorem ipsum Blablablablablablabla");
+var Cont1 = document.createTextNode("Par osiris et ParaBIS tu sera un sanglier un sanglier");
+para.appendChild(Cont);
+paraBis.appendChild(Cont1);
+var p = monDiv[5].appendChild(para);
+var p = monDiv[5].appendChild(paraBis);
+monDiv[5].style.display = "flex";
+monDiv[5].style.alignItems= "center";
+para.style.width = "50%";
+para.style.textAlign = "center";
+para.style.border = "2px solid black";
+paraBis.style.width = "50%";
+paraBis.style.textAlign = "center";
+paraBis.style.border = "2px solid black";
