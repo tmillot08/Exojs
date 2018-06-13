@@ -1,23 +1,23 @@
-/* Exo 2*/
+/* Exo 2
 
 var prenom = prompt ("Votre Prénom", "Thomas");
 
-alert("Bonjour " + prenom);
+alert("Bonjour " + prenom);*/
 
-/* Exo 3 */
+/* Exo 3
 
 var Prix = prompt ("Votre prix TTC", 0);
 
-alert("Prix TTC" + Prix * 1.2);
+alert("Prix TTC" + Prix * 1.2);*/
 
 
-/* Exo 4 */
+/* Exo 4
 
 var Celsius = prompt ("Température en Celcius", 0);
 
 alert("Température en Farenheit:" + (Celsius * 1.8 + 32));
 
-/* Exo 5 */
+/* Exo 5
 
 var monDiv = document.getElementsByTagName('div');
 
@@ -30,11 +30,11 @@ console.log(monDiv);
 monDiv[0].setAttribute('class', 'maClasse');
 
 
-/* Exo 6 */
+/* Exo 6
 
 monDiv[1].setAttribute("class", 'maClasse');
 
-/* monDiv[1].setAttribute("style", "color:yellow;") */
+/* monDiv[1].setAttribute("style", "color:yellow;")
 
 monDiv[1].setAttribute("style", "justify-content:center;");
 
@@ -50,7 +50,7 @@ monTxt[0].setAttribute("style", "text-align:left;");
 
 
 
-/* Exo 7 */
+/* Exo 7
 
 monDiv[2].setAttribute("style", "color:red; float:left;");
 monDiv[3].setAttribute("style", "color:green; float:left;");
@@ -86,7 +86,7 @@ function fadeIn(inter, op) {
     };
   }
 
-  /* EXO 9 */
+  /* EXO 9
 
 
   document.querySelector("h1").onmouseenter = function(){
@@ -113,7 +113,7 @@ function move(){
   };
 };
 
-/* Exo 10 */
+/* Exo 10
 var para = document.createElement("p");
 var paraBis = document.createElement("p");
 var Cont = document.createTextNode("Lorem ipsum Blablablablablablabla");
@@ -129,4 +129,4 @@ para.style.textAlign = "center";
 para.style.border = "2px solid black";
 paraBis.style.width = "50%";
 paraBis.style.textAlign = "center";
-paraBis.style.border = "2px solid black";
+paraBis.style.border = "2px solid black"; */
