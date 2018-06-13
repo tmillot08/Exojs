@@ -71,11 +71,12 @@ function mySwitch(){
 function fadeIn(inter, op) {
   myImg[0].setAttribute("style", "opacity:0;")
   var inter = setInterval(time, 300);
-  var op = 0.0
+  var op = 0;
 
     function time(){
       if (op >= 1.0) {
         clearInterval(inter);
+        myImg[0].removeAttribute("onclick");
 
       }else {
         op += 0.05;
